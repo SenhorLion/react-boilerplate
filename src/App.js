@@ -1,9 +1,35 @@
 import React from 'react';
+import { hot } from 'react-hot-loader';
+
 class App extends React.Component {
+  state = {
+    count: 0,
+  };
+
   render() {
-    debugger;
-    return <h1>Hello Reaction - from webpack dev server</h1>;
+    const { count } = this.state;
+
+    return (
+      <div>
+        <h1>Hello Reactionary!! - from webpack dev server hot!!!</h1>
+        <h2 className={count > 10 ? 'warning' : null}>Count: {count}</h2>
+        <button
+          onClick={() =>
+            this.setState(prevState => ({ count: prevState.count + 1 }))
+          }
+        >
+          +
+        </button>
+        <button
+          onClick={() =>
+            this.setState(prevState => ({ count: prevState.count - 1 }))
+          }
+        >
+          -
+        </button>
+      </div>
+    );
   }
 }
 
-export default App;
+export default hot(module)(App);
