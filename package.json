@@ -1,12 +1,20 @@
 {
   "name": "react-boilerplate-app",
   "version": "0.1.0",
-  "description": "",
+  "description": "#TODO: Add setup etc...",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Lionel",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SenhorLion/react-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SenhorLion/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/SenhorLion/react-boilerplate#readme"
 }
