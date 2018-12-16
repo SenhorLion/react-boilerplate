@@ -4,6 +4,8 @@
   "description": "#TODO: Add setup etc...",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "build:dev": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/SenhorLion/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/SenhorLion/react-boilerplate#readme"
+  "homepage": "https://github.com/SenhorLion/react-boilerplate#readme",
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
