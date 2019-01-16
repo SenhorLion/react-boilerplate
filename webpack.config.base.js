@@ -8,11 +8,16 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     filename: 'app.bundle.js',
   },
+  resolve: {
+    modules: ['node_modules', path.join(__dirname, 'src'), '*'],
+    extensions: ['.ts', '.jsx', '.js', '.json'],
+  },
   module: {
     rules: [
       {
         test: /\.js$/,
         loader: 'babel-loader',
+        include: [path.resolve(__dirname, 'src')],
         exclude: /node_modules/,
         options: {
           presets: ['@babel/preset-env', '@babel/preset-react'],
