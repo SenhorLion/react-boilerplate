@@ -19,26 +19,6 @@ module.exports = {
         loader: 'babel-loader',
         include: [path.resolve(__dirname, 'src')],
         exclude: /node_modules/,
-        options: {
-          presets: [
-            [
-              '@babel/preset-env',
-              {
-                targets: [
-                  'last 2 versions',
-                  'not dead',
-                  'not < 2%',
-                  'not ie 11',
-                ],
-              },
-            ],
-            '@babel/preset-react',
-          ],
-          plugins: [
-            'react-hot-loader/babel',
-            '@babel/plugin-proposal-class-properties',
-          ],
-        },
       },
       {
         test: /\.css$/,
