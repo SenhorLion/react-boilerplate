@@ -11,7 +11,7 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>Hello Reactionary!! - from webpack dev server hot!!!</h1>
+        <h1>React Boilerplate</h1>
         <img src="/logo.png" alt="" />
         <h2 className={count > 10 ? 'warning' : null}>Count: {count}</h2>
         <button
