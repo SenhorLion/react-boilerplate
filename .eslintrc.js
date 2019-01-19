@@ -24,5 +24,8 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module'
   },
+  rules: {
+    'react/prop-types': 0
+  },
   plugins: ['react', 'jsx-a11y']
 };
