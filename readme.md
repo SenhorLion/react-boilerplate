@@ -3,7 +3,7 @@
 ## Usage:
 
 Clone this repo:
-`git clone depth=1 git@github.com:SenhorLion/react-boilerplate.git <my-awesome-new-app>`
+`git clone --depth=1 git@github.com:SenhorLion/react-boilerplate.git <my-awesome-new-app>`
 
 Remove the original git info:
 `rm -rf .git`
